@@ -1,17 +1,17 @@
-# Introduction
+# Project Crystal Application
 
-## Team Peaches
-  @Nils Beutlilng
-  @Luca Schaedler
-  @Lukas Oester
-  @Jonathan Lerch
+## Introduction
 
-# Use Case
+### Team Peaches
+@ Nils Beutling
+@ Lukas Oester
+@ Luca Schaedler
+@ Jonathan Lerch
+ 
 
-## AS IS Process
+## Releases
 
-## TO BE Process
+## Maintainer 
+@ Maja Spahic
 
-## Challenges
-
-# Solution
+## Licenses
