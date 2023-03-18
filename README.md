@@ -11,7 +11,7 @@
 
 ## Releases
 
-## Maintainer 
+## Mentor, Coach and Maintainer 
 @ Maja Spahic
 
 ## Licenses
