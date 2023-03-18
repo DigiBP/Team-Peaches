@@ -1,19 +1,17 @@
-# Team-Peaches
+# Introduction
 
-#Introduction
-
-#Members
+## Team Peaches
   @Nils Beutlilng
   @Luca Schaedler
   @Lukas Oester
   @Jonathan Lerch
 
-#Use Case
+# Use Case
 
-#AS IS Process
+## AS IS Process
 
-#TO BE Process
+## TO BE Process
 
-#Challenges
+## Challenges
 
-#Solution
+# Solution
