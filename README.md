@@ -1,6 +1,6 @@
 # Team-Peaches
 
-# Team Members
+Team Members
   @Nils Beutlilng
   @Luca Schaedler
   @Lukas Oester
