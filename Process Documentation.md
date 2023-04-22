@@ -34,8 +34,8 @@ If a potential candidate decides to apply officially for the position, the whole
 If the potential candidate does not respond or submit a dossier after receiving the calculation outcome, the process gets finished after 10 days automatically.
 
 
-##Process: Intermediate Application Review
+## Process: Intermediate Application Review
 Each submitted dossier creates a new row in a google sheet. The MAKE Scenario observes and counts all submissions; every time the mark of 10 unreviewed dossier is reached, it triggers a message flow to the process “Job Advertisement to Candidate Notification” and starts the non-interrupting sub-process “Intermediate Application Review”.
 
-##Gains
+## Gains
 Thanks to the digitalized processes, the first shortlist includes already only candidates who are aware of their “candidates-position-fit” and the applicable salary range. Both the candidates and the hiring company do not waste time and effort for unmatching applications.
