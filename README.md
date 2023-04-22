@@ -3,8 +3,8 @@ Crystal Application is the project of four BIS master students @FHNW in connecti
 The project focuses on the early stages of an application/ hiring process from the release of a job advertisement until the suitable candidates of a shortlist are invited for a first interview and the other candidates received a rejection. The main goal of the project is to generate advantages by digitization, automation, and innovation; both for the potential candidates and the hiring company/ organization as well. Does it sound like a win-win solution? Yes, it is.
 
 For detailed information, please visit the specific pages
-[(Process Description.md)]
-[(Project Documentation.md)]
+(Process Description.md)
+(Project Documentation.md)
 
 ## Use Case
 Today in Switzerland, in a common situation of a hiring process, a candidate submits his or her application dossier based on the given information of the job advertisement. Depending on the clarity of the job advertisement, it is more or less assessable if the must-requirements are fulfilled or not. In addition, in most cases it is completely non-transparent, how the salary range would look like. This leads to an unclear situation for the candidates and not seldom to negative surprises later in the hiring process. On the other side, the hiring company or organization receives the application dossiers for the first review and filtering. But would all these candidates have submitted their dossier, if they had known their “candidate-position-fit” and even the salary range in advance? This situation leads to inefficiencies and to reduced motivation on both sides. Candidates prepare and submit dossiers they wouldn’t if the situation would have been clear regarding their position-fit and salary. Also, the companies are inefficient, because they receive and care about dossiers and even first interviews of candidates they wouldn’t have to if the candidates would have known the important information in advance.
