@@ -1,4 +1,4 @@
-# Crystal Application (crystal
+# Crystal Application :crystal:
 Crystal Application is the project of four BIS master students @FHNW in connection with the module digitalization of business processes. 
 The project focuses on the early stages of an application/ hiring process from the release of a job advertisement until the suitable candidates of a shortlist are invited for a first interview and the other candidates received a rejection. The main goal of the project is to generate advantages by digitization, automation, and innovation; both for the potential candidates and the hiring company/ organization as well. Does it sound like a win-win solution? Yes, it is.
 
@@ -22,11 +22,11 @@ The project is organized in an agile way with several sprints. With this approac
 ### Sprint 1 :running:
 ![image](https://user-images.githubusercontent.com/105595416/233784724-ee7cb3e3-bc1a-4b55-8556-ef1429e24d21.png)
 
-### Sprint 2
+### Sprint 2 :running:
 
-### Sprint 3
+### Sprint 3 :running:
 
-### Sprint 4
+### Sprint 4 :running:
 
 ## Tool Landscape
 The project team decided to use three main applications/ suites to realize the project. Camunda is used as a workflow engine, while MAKE provides the connections as a no-code integration and automation platform and the google suite ensures needed forms, sheets, and data storages.
