@@ -29,11 +29,12 @@ The project is organized in an agile way with several sprints. With this approac
 ### Sprint 4
 
 ## Tool Landscape
+The project team decided to use three main applications/ suites to realize the project. Camunda is used as a workflow engine, while MAKE provides the connections as a no-code integration and automation platform and the google suite ensures needed forms, sheets, and data storages.
+
+Collaboration within the team is done with Microsoft Office Solutions.
 
 ## Mentor, Coach and Maintainer 
 @ Maja Spahic
-
-# Licenses
 
 
 
