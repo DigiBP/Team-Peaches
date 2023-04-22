@@ -13,8 +13,8 @@ These features evolved during sprint 4.
 
 # Feature Backlog
 The subsequent listed features are ideas for further sprints in order to enhance the application process and to gain even more efficiency and effectiveness for all involved parties.
-•	Candidate-position-fit with must-criteria’s regarding skill, education, and experience -> creating a profile how big the overlapping is.
-•	Automated postings on social media platforms
-•	Automated calculation of commuter time from the current home to the possible new working place (SBB API integration)
-•	Booking of responsible HR manage according to his/ her outlook calendar (Microsoft API)
-•	Activity feed with incoming dossiers for digital HR office wallboard (e.g., with Jira wallboard) -> Motivation
+* Candidate-position-fit with must-criteria’s regarding skill, education, and experience -> creating a profile how big the overlapping is.
+* Automated postings on social media platforms
+* Automated calculation of commuter time from the current home to the possible new working place (SBB API integration)
+* Booking of responsible HR manage according to his/ her outlook calendar (Microsoft API)
+* Activity feed with incoming dossiers for digital HR office wallboard (e.g., with Jira wallboard) -> Motivation
