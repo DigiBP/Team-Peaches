@@ -1,4 +1,4 @@
-# Crystal Application
+# Crystal Application (crystal
 Crystal Application is the project of four BIS master students @FHNW in connection with the module digitalization of business processes. 
 The project focuses on the early stages of an application/ hiring process from the release of a job advertisement until the suitable candidates of a shortlist are invited for a first interview and the other candidates received a rejection. The main goal of the project is to generate advantages by digitization, automation, and innovation; both for the potential candidates and the hiring company/ organization as well. Does it sound like a win-win solution? Yes, it is.
 
@@ -10,16 +10,16 @@ The purpose of the project is to learn how to digitize business processes on the
 The project goal is to digitize and automate the early stages of an application process by an increased transparency in order to reduce waste and inefficiency for all involved stakeholders. In addition, the new digitized and at least partly automated process should increase the motivation of the process participants and enhance the employer branding of a company/ organization in mid- and long-term times by integrating helpful and not common innovations.
 
 
-## Project Team
+## Project Team :peach:
 @ Nils Beutling
 @ Lukas Oester
 @ Luca Schaedler
 @ Jonathan Lerch
  
-## Project Organization and Structure
+## Project Organization and Structure :fast_forward:
 The project is organized in an agile way with several sprints. With this approach the project team gains the flexibility regarding the end solution, which is not clear at the start and even during the project. The several sprints contain the subsequent described goal and content. One sprint takes 3 weeks in time.
 
-### Sprint 1
+### Sprint 1 :running:
 ![image](https://user-images.githubusercontent.com/105595416/233784724-ee7cb3e3-bc1a-4b55-8556-ef1429e24d21.png)
 
 ### Sprint 2
