@@ -1,0 +1,21 @@
+{
+    "messageName": "JobAd",
+    "processVariables":{
+        "job_title": {
+            "type": "String",
+            "value": "Senior Software Engineer"
+        },
+        "job_description": {
+            "type": "String",
+            "value": "Job Advertisment EXAMPLE"
+        },
+        "office_location": {
+            "type": "String",
+            "value": "Bern"
+        },
+        "wage_grade": {
+            "type": "Integer",
+            "value": 23
+        }
+    }
+}
