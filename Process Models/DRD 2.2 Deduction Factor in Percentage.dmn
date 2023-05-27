@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="DRD_2.2DeductionFactor" name="DRD 2.2 Deduction Factor" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.8.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <inputData id="Input_ApplicantInformation" name="Applicant Information" />
+  <decision id="Decision_DeductionFactor" name="Decision Deduction Factor">
+    <informationRequirement id="InformationRequirement_13hygwd">
+      <requiredDecision href="#Decision_AgeFactor" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_18mh05e">
+      <requiredDecision href="#Decision_ExperienceFactor" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_10idjzl">
+      <requiredDecision href="#Decision_DiplomaFactor" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_1ph421q" hitPolicy="COLLECT" aggregation="SUM">
+      <input id="InputClause_1o45jek" label="Age Factor" biodi:width="192" camunda:inputVariable="Decision_AgeFactor">
+        <inputExpression id="LiteralExpression_0yi9w8p" typeRef="double">
+          <text>age_factor</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0ggdc0p" label="Experience Factor" camunda:inputVariable="Decision_ExperienceFactor">
+        <inputExpression id="LiteralExpression_0rmubqn" typeRef="double">
+          <text>experience_factor</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0b1qs0q" label="Diploma Factor" camunda:inputVariable="Decision_DiplomaFactor">
+        <inputExpression id="LiteralExpression_14q8t1d" typeRef="double">
+          <text>diploma_factor</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_04081ie" label="Deduction Factor" name="deduction_factor" typeRef="double" />
+      <rule id="DecisionRule_0ugpa91">
+        <inputEntry id="UnaryTests_1u6fc99">
+          <text>60</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ugofin">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19rp732">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1afkl7u">
+          <text>-40</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0fbo9xd">
+        <inputEntry id="UnaryTests_1jiaio5">
+          <text>62</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1aa2rul">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0453e16">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jx0g8j">
+          <text>-38</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1r2d6b7">
+        <inputEntry id="UnaryTests_0xehqdd">
+          <text>64</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kjfezc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ffnd2x">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1kz1649">
+          <text>-36</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gs5ofn">
+        <inputEntry id="UnaryTests_0uwi4kb">
+          <text>66</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1msgmp2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12z43lo">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1crxs31">
+          <text>-34</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gvbafm">
+        <inputEntry id="UnaryTests_086aa21">
+          <text>68</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xiw4co">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13s7oxc">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0fhbug4">
+          <text>-32</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ninl5u">
+        <inputEntry id="UnaryTests_1ag1l18">
+          <text>70</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rz68nr">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0l0cw56">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jivjg2">
+          <text>-30</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1y33ylz">
+        <inputEntry id="UnaryTests_0kx0iny">
+          <text>72</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0na6qov">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0y8e28w">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1x9ircm">
+          <text>-28</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0yz7tsz">
+        <inputEntry id="UnaryTests_1lnocy2">
+          <text>74</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15vuuoy">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cxkpl7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_18ir7nb">
+          <text>-26</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15vwef5">
+        <inputEntry id="UnaryTests_0q18k6o">
+          <text>76</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wbz393">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yp6t0x">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1i60djz">
+          <text>-24</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mhvckv">
+        <inputEntry id="UnaryTests_0hxaf0y">
+          <text>78</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lgh82r">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19dc57x">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1s489wa">
+          <text>-22</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14jcfzh">
+        <inputEntry id="UnaryTests_1ykv49w">
+          <text>80</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vor26k">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dwn29s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1psbix5">
+          <text>-20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1w8k2bi">
+        <inputEntry id="UnaryTests_0o8bj9f">
+          <text>82</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kpn2zh">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dsi25d">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01zasji">
+          <text>-18</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0wqmykk">
+        <inputEntry id="UnaryTests_0wj8um1">
+          <text>84</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0u48yx6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04hocss">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_198kgzp">
+          <text>-16</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mbvzp0">
+        <inputEntry id="UnaryTests_0loq7sa">
+          <text>86</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lxobdx">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0swq9jh">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dxzt29">
+          <text>-14</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1cmvngk">
+        <inputEntry id="UnaryTests_155slhm">
+          <text>88</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jfvnya">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1il7q9s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0w9hu04">
+          <text>-12</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vxje6a">
+        <inputEntry id="UnaryTests_10xprre">
+          <text>90</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zcgmxk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03zktbw">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gy7onl">
+          <text>-10</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0a5wo84">
+        <inputEntry id="UnaryTests_1bd7a7l">
+          <text>92</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ib8xm9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qdidn4">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1omlqme">
+          <text>-8</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lh3sbm">
+        <inputEntry id="UnaryTests_0oiw287">
+          <text>94</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08bk3j1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pgr556">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1qsp25k">
+          <text>-6</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1s8ed9f">
+        <inputEntry id="UnaryTests_18x7msm">
+          <text>96</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1o0abup">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tvu8js">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wzpx5c">
+          <text>-4</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ejcyfy">
+        <inputEntry id="UnaryTests_0zoo35o">
+          <text>98</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tkmmx7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0g164ww">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15grcbz">
+          <text>-2</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1fof43h">
+        <inputEntry id="UnaryTests_0kdwatt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kt74cn">
+          <text>75</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tzthui">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1d9wv3s">
+          <text>-25</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1t1tyth">
+        <inputEntry id="UnaryTests_0wg80ot">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08vvxj8">
+          <text>85</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fisqs2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0zgisb9">
+          <text>-15</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_17bcvo7">
+        <inputEntry id="UnaryTests_0orw9gl">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1x7dvv0">
+          <text>90</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vhqyd4">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yt1alt">
+          <text>-10</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1w3ss9w">
+        <inputEntry id="UnaryTests_1u57pkh">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0sbphe4">
+          <text>100</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07g9jne">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1id6syk">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0z2828b">
+        <inputEntry id="UnaryTests_0kzzr35">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_034xu4m">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dqzbu2">
+          <text>96</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1o828d1">
+          <text>-4</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1f87a2y">
+        <inputEntry id="UnaryTests_1tgxbvf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jbr5wz">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gtdsez">
+          <text>97</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1tzxh1c">
+          <text>-3</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1557yoq">
+        <inputEntry id="UnaryTests_0tmm2yk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vssyud">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17hr4fl">
+          <text>100</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jxaveo">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Decision_AgeFactor" name="Decision Age Factor">
+    <informationRequirement id="InformationRequirement_0iv4mpy">
+      <requiredInput href="#Input_ApplicantInformation" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_01mbnad">
+      <input id="InputClause_02idzba" label="Applicant Age">
+        <inputExpression id="LiteralExpression_14m0zut" typeRef="integer">
+          <text>age</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0tlojs8" label="Age Factor" name="age_factor" typeRef="double" />
+      <rule id="DecisionRule_0hhlkv3">
+        <inputEntry id="UnaryTests_1pt2hhh">
+          <text>&lt;21</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1etvqap">
+          <text>60</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13qg47k">
+        <inputEntry id="UnaryTests_05bc6u2">
+          <text>21</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17oqfd4">
+          <text>62</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0bu1olq">
+        <inputEntry id="UnaryTests_1bn0vv3">
+          <text>22</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07itghs">
+          <text>64</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1el6sf1">
+        <inputEntry id="UnaryTests_08f5g6r">
+          <text>23</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1hk782s">
+          <text>66</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1a4ezz0">
+        <inputEntry id="UnaryTests_13xgxl9">
+          <text>24</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0beluvm">
+          <text>68</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_12yakdt">
+        <inputEntry id="UnaryTests_1cccrhc">
+          <text>25</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bfqmyf">
+          <text>70</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1tady6b">
+        <inputEntry id="UnaryTests_1k4wcth">
+          <text>26</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16ahl7x">
+          <text>72</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0mwkp8y">
+        <inputEntry id="UnaryTests_1o7jduz">
+          <text>27</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0fqflfv">
+          <text>74</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00cuw7h">
+        <inputEntry id="UnaryTests_19dn18t">
+          <text>28</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_100pibh">
+          <text>76</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ymb773">
+        <inputEntry id="UnaryTests_0yxlriq">
+          <text>29</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ecy3li">
+          <text>78</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tcdimd">
+        <inputEntry id="UnaryTests_0s2b8bl">
+          <text>30</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0tnshmv">
+          <text>80</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08u9nvw">
+        <inputEntry id="UnaryTests_0dvhujb">
+          <text>[31..32]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_000w032">
+          <text>82</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xdiqt4">
+        <inputEntry id="UnaryTests_0nsbfkn">
+          <text>[33..34]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1g1eui4">
+          <text>84</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tk0thc">
+        <inputEntry id="UnaryTests_1esci5h">
+          <text>[35..36]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gkc9ux">
+          <text>86</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0d65yps">
+        <inputEntry id="UnaryTests_0wd4u8g">
+          <text>[37..38]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06nx32i">
+          <text>88</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0n959ck">
+        <inputEntry id="UnaryTests_08fak3n">
+          <text>[39..40]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_13u4z9u">
+          <text>90</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1w46saj">
+        <inputEntry id="UnaryTests_061qgdd">
+          <text>[41..43]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0lae80i">
+          <text>92</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gyqpty">
+        <inputEntry id="UnaryTests_02hgqz6">
+          <text>[44..46]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0aifbzn">
+          <text>94</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00qsv23">
+        <inputEntry id="UnaryTests_09pq7yw">
+          <text>[47..49]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0d27ygg">
+          <text>96</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0hfff1t">
+        <inputEntry id="UnaryTests_1pfe3mj">
+          <text>&gt;49</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1vlsaps">
+          <text>98</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Decision_ExperienceFactor" name="Decision Experience Factor">
+    <informationRequirement id="InformationRequirement_0xkvr3p">
+      <requiredInput href="#Input_ApplicantInformation" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_13bdt9h">
+      <input id="InputClause_00fvkeg" label="Relevant Professional Experience">
+        <inputExpression id="LiteralExpression_0868ti2" typeRef="integer">
+          <text>prof_experience</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0ukj902" label="Experience Factor" name="experience_factor" typeRef="double" />
+      <rule id="DecisionRule_0a6yo5z">
+        <inputEntry id="UnaryTests_0re4euw">
+          <text>0</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1qv8iq1">
+          <text>75</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ws0r6q">
+        <inputEntry id="UnaryTests_1btnvyv">
+          <text>[1..2]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a613kx">
+          <text>85</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1knshk6">
+        <inputEntry id="UnaryTests_1onx2s6">
+          <text>[3..6]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1j6qnhl">
+          <text>90</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tud8fp">
+        <inputEntry id="UnaryTests_0t2rie2">
+          <text>[7..10]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1g9l06y">
+          <text>95</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0p45fjf">
+        <inputEntry id="UnaryTests_0jrulhj">
+          <text>&gt;10</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1om33g4">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Decision_DiplomaFactor" name="Decision Diploma Factor">
+    <informationRequirement id="InformationRequirement_1q3hsls">
+      <requiredInput href="#Input_ApplicantInformation" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_1yz4dxe">
+      <requiredInput href="#InputData_1hps4by" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_0a05foh">
+      <input id="InputClause_10sprff" label="Wage Grade">
+        <inputExpression id="LiteralExpression_0vgmie0" typeRef="integer">
+          <text>wage_grade</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1xoaum0" label="Highest Relevant Diploma">
+        <inputExpression id="LiteralExpression_1ngfsw7" typeRef="string">
+          <text>diploma</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_19361wq">
+          <text>"None","Apprenticeship","Higher Technical College","Bachelor","Master","PhD"</text>
+        </inputValues>
+      </input>
+      <output id="OutputClause_0119k7y" label="Diploma Factor" name="diploma_factor" typeRef="double" />
+      <rule id="DecisionRule_0maduur">
+        <description>Not possible, shown for comprehensiveness</description>
+        <inputEntry id="UnaryTests_046wq1w">
+          <text>&gt;8</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0k81xo8">
+          <text>"None"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01915k8">
+          <text>n/a</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00lx2kd">
+        <description>Not possible, shown for comprehensiveness</description>
+        <inputEntry id="UnaryTests_0dmmpl1">
+          <text>&gt;16</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ikqba6">
+          <text>"Apprenticeship"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1h5b548">
+          <text>n/a</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ll6xmv">
+        <description>Not possible, shown for comprehensiveness</description>
+        <inputEntry id="UnaryTests_0np84i5">
+          <text>&gt;20</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dd2fos">
+          <text>"Higher Technical College"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15xt03a">
+          <text>n/a</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_06cle9e">
+        <description>Not possible, shown for comprehensiveness</description>
+        <inputEntry id="UnaryTests_11vhu1m">
+          <text>&gt;25</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hw4lv8">
+          <text>"Bachelor"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0lp2eet">
+          <text>n/a</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_01ixawj">
+        <description>Not possible, shown for comprehensiveness</description>
+        <inputEntry id="UnaryTests_0o9nbw4">
+          <text>&gt;32</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uotv1y">
+          <text>"Master"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07yc53f">
+          <text>n/a</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_01gt7zq">
+        <inputEntry id="UnaryTests_0bszd4s">
+          <text>[1..6]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lvh648">
+          <text>"None","Apprenticeship","Higher Technical College","Bachelor","Master","PhD"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wf0nk0">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mi849z">
+        <description>Avantage with higher diploma than none</description>
+        <inputEntry id="UnaryTests_1ek40xj">
+          <text>[7..8]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1coq2u7">
+          <text>"None"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_155ofbf">
+          <text>96</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14m7en2">
+        <description></description>
+        <inputEntry id="UnaryTests_0zosa4b">
+          <text>[7..14]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1j9j7cm">
+          <text>"Apprenticeship","Higher Technical College","Bachelor","Master","PhD"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1o0mt3q">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0pdqz8j">
+        <description>Advantage with higher diploma than Apprenticeship</description>
+        <inputEntry id="UnaryTests_0iah33h">
+          <text>[15..16]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18wqv7u">
+          <text>"Apprenticeship"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16xw0d9">
+          <text>97</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0kg4hp2">
+        <description></description>
+        <inputEntry id="UnaryTests_1prpzr1">
+          <text>[15..18]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lhoqo2">
+          <text>"Higher Technical College","Bachelor","Master","PhD"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mhqg6c">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1d9c39x">
+        <description>Advantage with higher diploma than Higher Technical College</description>
+        <inputEntry id="UnaryTests_0jbc3h5">
+          <text>[19..20]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_045ua1m">
+          <text>"Higher Technical College"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0try80h">
+          <text>96</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15le9hj">
+        <inputEntry id="UnaryTests_07ects9">
+          <text>[19..22]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1q44lkr">
+          <text>"Bachelor","Master","PhD"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10g42go">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0h2s6k9">
+        <description>Advantage with higher diploma than Bachelor</description>
+        <inputEntry id="UnaryTests_1ovj9mz">
+          <text>[23..25]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1u2t7wh">
+          <text>"Bachelor"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15rhgxh">
+          <text>96</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1p8idwh">
+        <description></description>
+        <inputEntry id="UnaryTests_0lufz8f">
+          <text>[23..29]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pqrhon">
+          <text>"Master","PhD"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_074t3cr">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nt4p4v">
+        <description>Advantage with higher diploma than Master</description>
+        <inputEntry id="UnaryTests_1ndlbuo">
+          <text>[30..32]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lga7t8">
+          <text>"Master"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_131k3ss">
+          <text>96</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0nnjdkh">
+        <description></description>
+        <inputEntry id="UnaryTests_01du66p">
+          <text>[30..38]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bw92w1">
+          <text>"PhD"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ye8sdb">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1hps4by" name="Wage Grade of Job" />
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape id="DMNShape_05sc9ry" dmnElementRef="Input_ApplicantInformation">
+        <dc:Bounds height="45" width="125" x="407" y="387" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0b8zghu" dmnElementRef="InformationRequirement_0iv4mpy">
+        <di:waypoint x="470" y="387" />
+        <di:waypoint x="250" y="330" />
+        <di:waypoint x="250" y="310" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_088qp77" dmnElementRef="InformationRequirement_0xkvr3p">
+        <di:waypoint x="470" y="387" />
+        <di:waypoint x="470" y="330" />
+        <di:waypoint x="470" y="310" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_0wmwdxm" dmnElementRef="InformationRequirement_1q3hsls">
+        <di:waypoint x="470" y="387" />
+        <di:waypoint x="660" y="330" />
+        <di:waypoint x="660" y="310" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_0bnhxtn" dmnElementRef="InformationRequirement_13hygwd">
+        <di:waypoint x="250" y="230" />
+        <di:waypoint x="425" y="180" />
+        <di:waypoint x="425" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_0wt9hci" dmnElementRef="InformationRequirement_18mh05e">
+        <di:waypoint x="470" y="230" />
+        <di:waypoint x="470" y="180" />
+        <di:waypoint x="470" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_1ycmt4w" dmnElementRef="InformationRequirement_10idjzl">
+        <di:waypoint x="690" y="230" />
+        <di:waypoint x="515" y="180" />
+        <di:waypoint x="515" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0ji5lof" dmnElementRef="Decision_DeductionFactor">
+        <dc:Bounds height="80" width="180" x="380" y="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0vpdnfo" dmnElementRef="Decision_AgeFactor">
+        <dc:Bounds height="80" width="180" x="160" y="230" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0bh9noh" dmnElementRef="Decision_ExperienceFactor">
+        <dc:Bounds height="80" width="180" x="380" y="230" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1s29esq" dmnElementRef="Decision_DiplomaFactor">
+        <dc:Bounds height="80" width="180" x="600" y="230" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0lyphfs" dmnElementRef="InputData_1hps4by">
+        <dc:Bounds height="45" width="125" x="628" y="388" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_1mer47x" dmnElementRef="InformationRequirement_1yz4dxe">
+        <di:waypoint x="691" y="388" />
+        <di:waypoint x="720" y="330" />
+        <di:waypoint x="720" y="310" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
