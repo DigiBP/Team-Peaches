@@ -1,0 +1,75 @@
+{
+  "components": [
+    {
+      "label": "Job Title",
+      "type": "textfield",
+      "id": "Field_0brz29k",
+      "key": "job_title",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Aarau",
+          "value": "Aarau"
+        },
+        {
+          "label": "Basel",
+          "value": "Basel"
+        },
+        {
+          "label": "Bern",
+          "value": "Bern"
+        }
+      ],
+      "label": "Office Location",
+      "type": "select",
+      "id": "Field_1iw9xp7",
+      "key": "office_location",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Job Description",
+      "type": "textfield",
+      "id": "Field_0lkggra",
+      "key": "job_description"
+    },
+    {
+      "label": "Wage Grade",
+      "type": "number",
+      "id": "Field_0t1a6uy",
+      "key": "wage_grade",
+      "validate": {
+        "required": true,
+        "min": 1,
+        "max": 38
+      }
+    },
+    {
+      "label": "Application Deadline (required format: YYYY-MM-DD)",
+      "type": "textfield",
+      "id": "Field_121arn9",
+      "key": "appl_line"
+    },
+    {
+      "label": "Job-ID / Business Key [can be removed from from later]",
+      "type": "textfield",
+      "id": "Field_0frad3n",
+      "key": "instance_id",
+      "disabled": true
+    }
+  ],
+  "type": "default",
+  "id": "Form_JobInformation",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.8.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 7
+}
