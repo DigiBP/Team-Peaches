@@ -1,4 +1,4 @@
-# Excite new Applicants
+# Excite new Applicants 🚀
 ## Gaining efficiency and enthusiasm by implementing transparency and AI in your hiring process
 
 Crystal Applications is the project of four BIS master students the university of applied sciences and arts northwestern switzerland (FHNW) as part of the module Digitalization of Business Processes. 
