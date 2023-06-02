@@ -7,7 +7,7 @@
         },
         "job_description": {
             "type": "String",
-            "value": "Job Advertisment EXAMPLE"
+            "value": "Job Advertisement EXAMPLE"
         },
         "office_location": {
             "type": "String",
